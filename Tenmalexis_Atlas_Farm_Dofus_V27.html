@@ -1,0 +1,338 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Atlas des Zones de Farm DOFUS — Tenmalexis V25</title><link href="https://fonts.bunny.net/css?family=rajdhani:500,600,700|dm-sans:400,500,700|exo-2:400,600,700" rel="stylesheet"><style>
+:root{--bg:#0a0c10;--panel:#12151c;--panel2:#171b24;--border:#292e38;--gold:#f4b400;--txt:#eceef3;--muted:#aab0bf;--green:#2ecc71;--red:#ff6b6b}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 15% -10%,#35290c44,transparent 35%),var(--bg);color:var(--txt);font:14px 'DM Sans',sans-serif}button,input,select{font:inherit}button{cursor:pointer}header{border-bottom:1px solid var(--border);background:#0b0d12ee;position:sticky;top:0;z-index:5;backdrop-filter:blur(12px)}.top{max-width:1740px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:15px;padding:15px 20px;flex-wrap:wrap}.brand{display:flex;align-items:center;gap:12px}.brand img{height:50px;width:50px;object-fit:contain;padding:5px;border:1px solid var(--gold);border-radius:10px}.brand strong{font:700 25px Rajdhani;color:white}.brand em{font-style:normal;color:var(--gold)}.brand small{display:block;color:var(--gold);font:600 12px 'Exo 2'}.links{display:flex;gap:9px;flex-wrap:wrap}.links a{border:1px solid #5a4a21;padding:9px 12px;border-radius:8px;text-decoration:none;color:var(--gold);font-size:12px;font-weight:700}.links a:nth-child(2){border-color:#9b3a3a;color:#ff7676}.links a:nth-child(3){border-color:#634b91;color:#ba9aff}.wrap{max-width:1740px;margin:auto;padding:25px 20px 60px}.hero{display:flex;justify-content:center;align-items:center;gap:20px;flex-wrap:wrap;margin:4px 0 18px;text-align:center}.hero>div{width:100%}.hero h1{font:700 clamp(26px,4vw,40px) Rajdhani;margin:0}.hero h1 span{color:var(--gold)}.hero p{display:none}.panel{background:var(--panel);border:1px solid var(--border);border-radius:12px;overflow:hidden}.panel h2{font:700 19px Rajdhani;color:var(--gold);letter-spacing:.045em;margin:0;padding:13px 17px;background:linear-gradient(100deg,#543d142f,transparent);border-bottom:1px solid #543d1460}.import{padding:16px;display:flex;gap:9px;flex-wrap:wrap;align-items:center}.btn{border:1px solid #5f4b22;color:var(--gold);background:#241e13;padding:10px 14px;border-radius:8px;font-weight:700}.btn:hover{filter:brightness(1.25)}.btn.primary{background:var(--gold);color:#111}.btn.secondary{background:#151a24;color:#d5d7dd;border-color:var(--border)}.file{display:none}.hint{color:var(--muted);font-size:12px;line-height:1.65;padding:0 17px 16px}.status{font-size:12px;color:var(--muted);padding:11px 15px;border:1px solid var(--border);border-radius:8px;max-width:100%;overflow-wrap:anywhere}.status.error{color:#ff9191;border-color:#783838}.status.ok{color:#80e5a6;border-color:#23673d}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:17px 0}.stat{padding:14px 17px;background:var(--panel);border:1px solid var(--border);border-radius:11px}.stat b{display:block;font:700 30px Rajdhani;color:white}.stat small{color:var(--muted)}.columns{display:grid;grid-template-columns:390px minmax(0,1fr);gap:16px}.field{padding:14px 15px;border-bottom:1px solid var(--border)}label{display:block;font-size:12px;color:var(--muted);margin-bottom:6px}.inp{width:100%;border:1px solid #333b49;background:#0c1017;color:white;border-radius:8px;padding:11px;outline:none}.inp:focus{border-color:var(--gold)}.regions{max-height:680px;overflow-y:auto;padding:9px}.region{width:100%;text-align:left;background:transparent;border:1px solid transparent;color:#dfe1e7;padding:11px;border-radius:8px;display:flex;justify-content:space-between;gap:7px}.region:hover{background:#1b202a}.region.active{background:#31280e;border-color:#69521b;color:var(--gold)}.region small{color:#adb3c0}.content{min-height:440px}.empty{padding:65px 20px;text-align:center;color:var(--muted)}.empty b{display:block;color:#e6e7ed;font:700 25px Rajdhani;margin-bottom:8px}.zonehead{padding:18px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.zonehead h3{font:700 29px Rajdhani;margin:0}.subzones{display:flex;gap:7px;flex-wrap:wrap;padding:0 18px 16px}.chip{border:1px solid #434c5a;background:#171e26;color:#ddd;padding:7px 10px;border-radius:8px}.chip.selected{color:var(--gold);border-color:#a17b16;background:#3d300c}.tabs{display:flex;border-block:1px solid var(--border)}.tab{border:0;border-right:1px solid var(--border);background:#10131a;color:#c8ccd5;padding:13px 18px;font-weight:700}.tab.active{color:var(--gold);background:#252010}.toolbar{display:flex;gap:10px;padding:13px 17px;align-items:center;flex-wrap:wrap}.toolbar input{flex:1;min-width:170px}.toolbar select{max-width:220px}.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:0}th{text-align:left;font:700 13px Rajdhani;color:#aab3c1;background:#0d1016;white-space:nowrap;padding:11px 13px}td{border-top:1px solid #252a34;padding:9px 13px;vertical-align:middle}tr:hover td{background:#191e28}.item{display:flex;gap:10px;align-items:center}.item img{width:35px;height:35px;object-fit:contain;background:#0b1018;border-radius:6px}.muted{color:var(--muted);font-size:12px}.positive{color:#65e99b}.warning{color:#f4b400}.num{text-align:right;font-variant-numeric:tabular-nums}td input{width:100%;min-width:0;padding:8px;color:white;background:#0d1016;border:1px solid #424957;border-radius:7px;text-align:right}.note{background:#121a22;border-top:1px solid var(--border);padding:13px 17px;color:#bdc4d0;font-size:12px;line-height:1.65}.mini{padding:10px 14px;border:1px solid #424857;background:#151a22;color:white;border-radius:7px;cursor:pointer}.mini:hover{border-color:var(--gold)}.nowrap{white-space:nowrap}@media(max-width:850px){.columns{grid-template-columns:1fr}.regions{max-height:240px}.stats{grid-template-columns:repeat(2,1fr)}}@media(max-width:470px){.wrap{padding:15px 9px}.stats{gap:7px}.stat{padding:10px}.links a{padding:7px}.hero h1{font-size:27px}}
+
+/* V6 — aménagement grands tableaux / affichage HDV sans défilement latéral */
+.columns{align-items:start}.columns>aside{min-width:0}.columns>.content{min-width:0}
+.region{padding:12px 13px;align-items:center;font-size:14px;line-height:1.3}
+.region span{flex:1;min-width:0}.region small{white-space:nowrap;flex-shrink:0}
+.tablewrap{width:100%;overflow-x:hidden}
+.tablewrap table{table-layout:fixed;width:100%;min-width:0}
+.tablewrap th,.tablewrap td{padding:11px 9px;overflow-wrap:anywhere}
+.tablewrap .resource-table th:nth-child(1),.tablewrap .resource-table td:nth-child(1){width:23%}
+.tablewrap .resource-table th:nth-child(2),.tablewrap .resource-table td:nth-child(2){width:25%}
+.tablewrap .resource-table th:nth-child(3),.tablewrap .resource-table td:nth-child(3){width:9%}
+.tablewrap .resource-table th:nth-child(4),.tablewrap .resource-table td:nth-child(4){width:15%}
+.tablewrap .resource-table th:nth-child(5),.tablewrap .resource-table td:nth-child(5){width:15%}
+.tablewrap .resource-table th:nth-child(6),.tablewrap .resource-table td:nth-child(6){width:13%}
+.resource-table td:nth-child(2){font-size:12px;line-height:1.5}
+.resource-table td:nth-child(3){text-align:center;font-weight:700;color:#e3e5eb;white-space:nowrap;font-size:12px}
+.resource-table td:nth-child(4) input,.resource-table td:nth-child(5) input{max-width:150px;font-size:13px}
+.resource-table .item{gap:7px;min-width:0}.resource-table .item img{width:33px;height:33px;flex-shrink:0}
+.resource-table .item>div{min-width:0}.resource-table .item b{font-size:13px;line-height:1.2;display:block}
+.resource-table .num{font-size:12px}
+@media(max-width:1250px) and (min-width:851px){.columns{grid-template-columns:315px minmax(0,1fr)}.resource-table th,.resource-table td{padding:8px 5px!important}.resource-table td input{padding:7px 3px;font-size:12px}.resource-table .item img{width:27px;height:27px}.resource-table td:nth-child(2){font-size:11px}}
+@media(max-width:850px){.columns{grid-template-columns:1fr}.regions{max-height:300px}.tablewrap{overflow-x:auto}.tablewrap .resource-table{min-width:760px}}
+/* V8 — en-têtes centrés et lisibilité des taux */
+.resource-table thead th{text-align:center!important;vertical-align:middle;white-space:normal;line-height:1.3}
+.resource-table td:nth-child(3){white-space:normal!important;overflow-wrap:normal!important;word-break:normal!important;text-align:center;}
+.resource-table th:nth-child(3),.resource-table td:nth-child(3){width:11%}
+.resource-table th:nth-child(2),.resource-table td:nth-child(2){width:23%}
+.resource-table td:nth-child(4),.resource-table td:nth-child(5){text-align:center!important}
+.resource-table td:nth-child(4) input,.resource-table td:nth-child(5) input{display:block;margin-inline:auto;width:100%;max-width:150px}
+.resource-table td:nth-child(6){text-align:center}
+
+/* V9 — en-tête unifié du calculateur de craft */
+.ten-site-header{position:sticky;top:0;z-index:100000;width:100%;min-height:84px;padding:16px clamp(20px,5vw,56px);display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;background:rgba(10,12,16,.95);backdrop-filter:blur(10px);border-bottom:1px solid #20242e}
+.ten-brand{display:flex;align-items:center;gap:14px;min-width:0}
+.ten-brand-logo{width:52px;height:52px;border:1.5px solid #f4b400;border-radius:10px;padding:5px;display:flex;align-items:center;justify-content:center;overflow:hidden;flex:0 0 auto;box-shadow:0 0 12px rgba(244,180,0,.1)}
+.ten-brand-logo img{width:100%;height:100%;object-fit:contain;display:block}
+.ten-brand-copy{display:flex;flex-direction:column;line-height:1.05}
+.ten-brand-title{font-family:'Rajdhani',sans-serif;font-size:1.55rem;font-weight:700;color:#fff;letter-spacing:.03em}
+.ten-brand-title span{color:#f4b400}
+.ten-brand-sub{margin-top:5px;font-family:'Exo 2',sans-serif;font-size:.76rem;color:#f4b400}
+.ten-social{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.ten-social-item{display:flex;flex-direction:column;align-items:center;gap:2px;padding:6px 16px 8px;border-radius:14px;transition:background .15s ease,box-shadow .15s ease,transform .15s ease}
+.ten-social-item:hover{transform:translateY(-1px)}
+.ten-social-item .platform-label{font-family:'Exo 2',sans-serif;font-size:.6rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;opacity:.75}
+.ten-social-item a{display:flex;align-items:center;gap:6px;color:inherit;text-decoration:none;font-family:'Exo 2',sans-serif;font-size:.85rem;font-weight:600}
+.ten-social-item.youtube{color:#ff5c5c;background:rgba(255,59,59,.1);border:1px solid rgba(255,59,59,.45);box-shadow:0 0 12px rgba(255,59,59,.18)}
+.ten-social-item.youtube:hover{background:rgba(255,59,59,.16);box-shadow:0 0 16px rgba(255,59,59,.3)}
+.ten-social-item.twitch{color:#b794ff;background:rgba(145,70,255,.12);border:1px solid rgba(145,70,255,.5);box-shadow:0 0 12px rgba(145,70,255,.22)}
+.ten-social-item.twitch:hover{background:rgba(145,70,255,.18);box-shadow:0 0 16px rgba(145,70,255,.35)}
+.ten-social-item.ankama{color:#f4b400;background:rgba(244,180,0,.1);border:1px solid rgba(244,180,0,.45);box-shadow:0 0 12px rgba(244,180,0,.18);justify-content:center;padding-top:12px;padding-bottom:12px}
+.ten-social-item.ankama:hover{background:rgba(244,180,0,.16);box-shadow:0 0 16px rgba(244,180,0,.3)}
+.ten-social-item.tiktok{color:#4dedea;background:rgba(37,244,238,.1);border:1px solid rgba(37,244,238,.45);box-shadow:0 0 12px rgba(37,244,238,.18)}
+.ten-social-item.tiktok:hover{background:rgba(37,244,238,.16);box-shadow:0 0 16px rgba(37,244,238,.3)}
+@media(max-width:1100px){.ten-social{width:100%;justify-content:flex-start}}
+@media(max-width:650px){.ten-site-header{padding:12px 14px}.ten-brand-logo{width:44px;height:44px}.ten-brand-title{font-size:1.2rem}.ten-brand-sub{font-size:.68rem}.ten-social{gap:7px}.ten-social-item{padding:6px 10px 7px;border-radius:11px}.ten-social-item.ankama{padding-top:10px;padding-bottom:10px}.ten-social-item a{font-size:.74rem}.ten-social-item .platform-label{font-size:.51rem}}
+</style><style id="v10-style">
+/* V10 — barre discrète de synchronisation et explorateur bi-mode */
+main.wrap > section.panel:first-of-type{display:none!important}
+.ten-sync{display:flex;align-items:center;gap:8px;margin-right:14px;min-width:0;max-width:370px}
+.ten-sync .status{padding:8px 10px;font-size:11px;max-width:330px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-color:#3d4653}
+.ten-sync .sync-icon{border:1px solid #5f4b22;border-radius:8px;padding:7px 10px;color:var(--gold);background:#211b10;font-size:16px;cursor:pointer}
+.ten-sync .sync-icon:disabled{opacity:.5;cursor:wait}
+.mode-switch{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:12px}
+.mode-switch button{padding:9px 8px;border-radius:7px;background:#141922;color:#c7cbd5;border:1px solid #303846;cursor:pointer;font-weight:700;font-size:12px}
+.mode-switch button.active{border-color:#a37d18;background:#30270c;color:var(--gold)}
+.monster-match{border-top:1px solid #29303b;padding:9px 10px;color:#aab0bf;font-size:12px}
+.monster-locator{width:100%;display:block;text-align:left;background:#11161f;border:1px solid #303847;color:#eee;border-radius:8px;padding:10px;margin:6px 0;cursor:pointer}
+.monster-locator:hover{border-color:#a37d18;background:#24210f}
+.monster-locator strong{display:block;color:#fff;margin-bottom:3px}
+.monster-locator small{color:#aeb6c4}
+@media(max-width:1150px){.ten-sync{order:3;width:100%;max-width:100%;margin-right:0}.ten-sync .status{max-width:calc(100% - 50px)} }
+</style><style id="v11-style">
+.ten-data-actions{display:flex;gap:7px;align-items:center;flex-wrap:wrap}
+.ten-action,.ten-extra summary{display:inline-flex;justify-content:center;align-items:center;min-height:35px;padding:7px 10px;border:1px solid #394251;border-radius:8px;background:#121721;color:#e8e9ed;font:700 12px 'DM Sans',sans-serif;cursor:pointer;white-space:nowrap;text-decoration:none}
+.ten-action-import{border-color:rgba(244,180,0,.5);color:#f4b400}.ten-action-export{border-color:rgba(46,204,113,.48);color:#69e5a1}
+.ten-extra{position:relative}.ten-extra summary{list-style:none}.ten-extra summary::-webkit-details-marker{display:none}
+.ten-extra-menu{position:absolute;z-index:100002;right:0;top:calc(100% + 6px);padding:9px;background:#161b24;border:1px solid #343b48;border-radius:10px;min-width:215px;display:flex;flex-direction:column;gap:7px;box-shadow:0 10px 30px #0008}
+.ten-extra-menu>*{width:100%;white-space:normal}.ten-extra-menu .ten-action{text-align:center}
+@media(max-width:1350px){.ten-data-actions{order:4;width:100%;justify-content:flex-start}}
+</style><style id="v12-style">
+/* Harmonisation header : synchro + import/export alignés sur une même ligne */
+.ten-site-header{justify-content:flex-start;column-gap:16px;row-gap:10px}
+.ten-header-utility{display:flex;gap:12px;align-items:center;min-width:0;flex:1 1 420px;justify-content:flex-end}
+.ten-header-utility .ten-sync{display:flex;min-width:0;flex:1 1 200px;max-width:420px;margin-right:0;order:initial}
+.ten-header-utility .ten-sync .status{max-width:100%;min-width:0;flex:1;white-space:nowrap;text-overflow:ellipsis}
+.ten-header-utility .ten-data-actions{display:flex;gap:8px;align-items:center;flex:0 0 auto;width:auto;order:initial;flex-wrap:nowrap}
+.ten-header-utility .ten-action{margin:0;min-height:36px;padding:8px 14px}
+.ten-site-header .ten-social{width:auto;margin-left:auto;justify-content:flex-end}
+@media(max-width:1300px){.ten-header-utility{order:3;flex-basis:100%;justify-content:flex-start}.ten-site-header .ten-social{width:auto;justify-content:flex-end}.ten-header-utility .ten-sync{max-width:450px}}
+@media(max-width:750px){.ten-site-header .ten-social{width:100%;margin-left:0;justify-content:flex-start}.ten-header-utility{gap:8px;flex-wrap:wrap}.ten-header-utility .ten-sync{flex:1 1 240px}.ten-header-utility .ten-data-actions{flex:0 0 auto}}
+/* Tableau monstres : privilégier la lecture des drops */
+.tablewrap .monster-table{table-layout:fixed;width:100%;min-width:0}
+.monster-table th,.monster-table td{vertical-align:middle;padding:12px 11px}
+.monster-table thead th{text-align:center!important;white-space:normal;line-height:1.25}
+.monster-table th:nth-child(1),.monster-table td:nth-child(1){width:27%}
+.monster-table th:nth-child(2),.monster-table td:nth-child(2){width:9%;text-align:center}
+.monster-table th:nth-child(3),.monster-table td:nth-child(3){width:52%}
+.monster-table th:nth-child(4),.monster-table td:nth-child(4){width:12%;text-align:center}
+.monster-table td:nth-child(3){font-size:12px;line-height:1.5;overflow-wrap:anywhere}
+.monster-table .monster-count{font-weight:700;font-size:15px;color:#eceef3;font-variant-numeric:tabular-nums}
+@media(max-width:900px){.tablewrap{overflow-x:auto}.tablewrap .monster-table{min-width:680px}}
+<style>.dungeon-icon{display:inline-block;font-size:12px;line-height:1;vertical-align:baseline;margin-right:2px}</style></style><style>/* V25 : stock et couverture, colonnes équilibrées */
+.tablewrap .resource-table th:nth-child(1),.tablewrap .resource-table td:nth-child(1){width:23%!important}
+.tablewrap .resource-table th:nth-child(2),.tablewrap .resource-table td:nth-child(2){width:22%!important}
+.tablewrap .resource-table th:nth-child(3),.tablewrap .resource-table td:nth-child(3){width:10%!important}
+.tablewrap .resource-table th:nth-child(4),.tablewrap .resource-table td:nth-child(4){width:12%!important}
+.tablewrap .resource-table th:nth-child(5),.tablewrap .resource-table td:nth-child(5){width:12%!important}
+.tablewrap .resource-table th:nth-child(6),.tablewrap .resource-table td:nth-child(6){width:12%!important}
+.tablewrap .resource-table th:nth-child(7),.tablewrap .resource-table td:nth-child(7){width:9%!important}
+.resource-table td:nth-child(6),.resource-table td:nth-child(7){text-align:center!important}
+.resource-table td:nth-child(4) input,.resource-table td:nth-child(5) input,.resource-table td:nth-child(6) input{max-width:135px;width:100%;min-width:0;text-align:center}
+@media(max-width:1250px){.tablewrap{overflow-x:auto!important}.tablewrap .resource-table{min-width:950px!important}}
+</style></head><body><header class="ten-site-header"><div class="ten-brand"><div class="ten-brand-logo"><img src="https://api.dofusdb.fr/img/items/172004.png" alt="Tenmalexis"></div><div class="ten-brand-copy"><span class="ten-brand-title">Tenmalexis</span><span class="ten-brand-sub">L'art de faire des kamas intelligemment</span></div></div><div class="ten-header-utility"><div class="ten-sync" id="tenSync"><button class="sync-icon" id="headerRefresh" type="button" title="Actualiser la base DofusDB">↻</button></div><div class="ten-data-actions"><label class="ten-action ten-action-import" title="Importer ses prix et ventes">📥 Importer<input id="pricesImport" type="file" accept=".json,application/json" hidden></label><button id="headerExportData" class="ten-action ten-action-export" type="button" title="Exporter ses prix et ventes au format JSON">📤 Exporter</button></div></div><nav class="ten-social" aria-label="Réseaux Tenmalexis"><div class="ten-social-item ankama"><a href="https://store.ankama.com/fr?code=TENMA" target="_blank" rel="noopener">Code Créateur TENMA</a></div><div class="ten-social-item youtube"><span class="platform-label">YouTube</span><a href="https://www.youtube.com/@Tenmalexis" target="_blank" rel="noopener">▶ @Tenmalexis</a></div><div class="ten-social-item twitch"><span class="platform-label">Twitch</span><a href="https://www.twitch.tv/tenmalexis" target="_blank" rel="noopener">▶ @tenmalexis</a></div><div class="ten-social-item tiktok"><span class="platform-label">TikTok</span><a href="https://www.tiktok.com/@tenmalexis" target="_blank" rel="noopener">♪ @tenmalexis</a></div></nav></header><button id="exportPrices" type="button" hidden></button><main class="wrap"><div class="hero"><div><h1>ATLAS DES <span>ZONES DE FARM</span> DOFUS</h1><p></p></div></div><section class="panel"><h2>▸ BASE DE DONNÉES DOFUS UNITY</h2><div class="import"><button class="btn primary" id="loadDofusDB">↻ Actualiser les données DOFUSDB</button><label class="btn" style="margin:0;cursor:pointer">📂 Importer JSON / ZIP / CSV<input class="file" id="fileImport" type="file" accept=".json,.zip,.csv,application/json,application/zip,text/csv"></label><button class="btn secondary" id="loadSaved">↻ Restaurer la dernière base</button><button class="btn secondary" id="exportBase">↓ Exporter la base</button><span id="status" class="status">Initialisation automatique…</span></div><div class="hint">Source : <a style="color:#f4b400" target="_blank" href="https://api.dofusdb.fr">DofusDB</a>. Connexion Internet nécessaire. Les zones sont affichées en premier, puis les monstres et les ressources. Si le service est indisponible, une erreur explicite apparaît. Les images utilisent les identifiants graphiques lorsqu’ils existent. Les drops sont rapprochés depuis les fiches monstres et ressources ; une association absente reste indisponible.</div></section><div class="columns"><aside class="panel"><h2>▸ EXPLORER LES ZONES</h2><div class="field"><label for="zoneSearch">Rechercher une zone ou sous-zone</label><input class="inp" id="zoneSearch" placeholder="Ex : Frigost, Pandala, Astrub..."><div class="mode-switch"><button id="modeZones" class="active" type="button">Zones</button><button id="modeMonsters" type="button">Monstres</button></div></div><div class="regions" id="regions"><div class="empty" style="padding:35px 10px">Charge une base pour explorer les zones.</div></div></aside><section class="panel content"><div id="details"><div class="empty"><b>Ton encyclopédie du farm</b>Charge la base de données pour afficher les zones, les monstres et toutes les ressources associées.<p>Tu peux ensuite saisir tes prix HDV et ventes sur 30 jours : ils seront conservés sur cet appareil.</p></div></div></section></div></main><script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script><script>
+'use strict';document.getElementById('tenSync').appendChild(document.getElementById('status'));let searchMode='zones';const formatDropRate=x=>{const n=Number(x);return Number.isFinite(n)?new Intl.NumberFormat('fr-FR',{maximumFractionDigits:2}).format(Math.round((n+Number.EPSILON)*100)/100)+'%':'—'};const $=id=>document.getElementById(id),fmt=x=>Number(x||0).toLocaleString('fr-FR'),safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const txt=o=>typeof o==='string'?o:(o?.fr||o?.name?.fr||o?.name||o?.text?.fr||o?.text||'');let DB={zones:[],monsters:[],resources:[]},selected=null,sub='all',tab='resources',sort='name',filter='',prices={};try{prices=JSON.parse(localStorage.getItem('ten-atlas-prices')||'{}')}catch{};const status=(s,b='')=>{$('status').textContent=s;$('status').className='status '+b};const arr=x=>Array.isArray(x)?x:[];const id=x=>String(x??'');function normalizedZone(z){return {id:id(z.id??z.ankama_id??z.Id),name:txt(z.name)||txt(z.Name)||('Zone '+z.id),parent:id(z.parent??z.parentId??z.areaId??z.area_id??z.parent_id??z.area?.id??''),level:z.level??z.minLevel??z.min_level??null,mobIds:arr(z.monsterIds??z.monsters??z.monster_ids).map(v=>id(typeof v==='object'?(v.id??v.monsterId):v)),subzones:arr(z.subzones).map(v=>id(typeof v==='object'?v.id:v)),isDungeon:Boolean(z.isDungeon)}}function normalizedMob(m){return{id:id(m.id??m.ankama_id??m.Id),name:txt(m.name)||txt(m.Name)||('Monstre '+m.id),level:m.level??m.min_level??m.level_min??m.grades?.[0]?.level??'',image:m.image??m.image_url??m.image_urls?.icon??'',zoneIds:arr(m.zoneIds??m.subareaIds??m.subarea_ids??m.subareas??m.subAreas??m.zoneIds??m.zones).map(v=>id(typeof v==='object'?v.id:v)),drops:arr(m.drops??m.dropItems??m.drop_items??m.dropData).map(d=>typeof d==='object'?{id:id(d.itemId??d.objectId??d.item_id??d.id??d.item?.id),rate:d.rate??d.percentDropForGrade1??d.dropRate??d.probability??null,name:txt(d.name??d.item?.name),image:d.image??d.item?.image??''}:{id:id(d),rate:null})}}function normalizedRes(r){return{id:id(r.id??r.ankama_id??r.Id),name:txt(r.name)||txt(r.Name)||('Ressource '+r.id),level:r.level??'',image:r.image??r.image_url??r.image_urls?.icon??r.image_urls?.sd??'',type:txt(r.type?.name??r.type),dropMobs:arr(r.dropMobs??r.droppedBy??r.monsters).map(x=>id(typeof x==='object'?x.id:x))}}function standardize(raw){const z=arr(raw.zones??raw.areas),sz=arr(raw.subzones??raw.subareas),mon=arr(raw.monsters??raw.mobs),res=arr(raw.resources??raw.items);let zs=z.map(normalizedZone);let children=sz.map(s=>normalizedZone({...s,parentId:s.areaId??s.area_id??s.parentId??s.area?.id}));for(const a of z){for(const s of arr(a.subzones)){if(typeof s==='object'&&!children.some(v=>v.id===id(s.id)))children.push(normalizedZone({...s,parentId:a.id}))}}return{zones:[...zs,...children.filter(s=>!zs.some(z=>z.id===s.id))].filter(z=>z.id&&z.id!=='undefined'),monsters:mon.map(normalizedMob).filter(m=>m.id&&m.id!=='undefined'),resources:res.map(normalizedRes).filter(r=>r.id&&r.id!=='undefined')}}function hydrate(db){const mobs=new Map(db.monsters.map(m=>[m.id,m])),resources=new Map(db.resources.map(r=>[r.id,r]));for(const r of db.resources){for(const mid of r.dropMobs){let m=mobs.get(mid);if(m&&!m.drops.some(d=>d.id===r.id))m.drops.push({id:r.id,rate:null})}}for(const z of db.zones){for(const mid of z.mobIds){let m=mobs.get(mid);if(m&&!m.zoneIds.includes(z.id))m.zoneIds.push(z.id)}}for(const m of db.monsters){for(const d of m.drops){if(!resources.has(d.id)&&d.name){const r={id:d.id,name:d.name,image:d.image||'',level:'',type:'',dropMobs:[]};db.resources.push(r);resources.set(d.id,r)}}}return db}
+function setDb(raw){const normalized=hydrate(standardize(raw));if(!normalized.zones.length)throw Error('Aucune zone reconnue dans le fichier. Vérifie la structure des données.');// La base reste complète ; seul l'explorateur masque les entrées autonomes.
+DB=normalized;updateOccupiedZones();selected=DB.zones.find(z=>!z.parent&&occupiedZoneIds.has(z.id)&&!zoneIsHidden(z))?.id??null;sub='all';render();status('Base chargée : '+fmt(DB.zones.length)+' zones, '+fmt(DB.monsters.length)+' monstres, '+fmt(DB.resources.length)+' ressources.','ok');try{localStorage.setItem('ten-atlas-db',JSON.stringify(raw))}catch(e){status('Base chargée, mais trop volumineuse pour être conservée en local.','ok')}}
+function associatedZones(z){return DB.zones.filter(s=>s.parent===z.id||z.subzones.includes(s.id))}function getMobSet(zone){const ids=new Set([zone.id,...associatedZones(zone).map(x=>x.id)]);if(sub!=='all')return DB.monsters.filter(m=>m.zoneIds.includes(sub)||DB.zones.find(x=>x.id===sub)?.mobIds.includes(m.id));return DB.monsters.filter(m=>m.zoneIds.some(v=>ids.has(v))||[zone,...associatedZones(zone)].some(z=>z.mobIds.includes(m.id)))}function visibleDropRate(rate){const n=Number(rate);return Number.isFinite(n)&&n>0&&Math.round((n+Number.EPSILON)*100)/100>0}// V20 : exclusions ciblées (noms techniques de quêtes), sans filtrer les véritables images manquantes. d'objets cosmétiques et événementiels (affichage uniquement).
+function isHiddenFarmResourceName(name){
+ const n=String(name||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('fr').replace(/[’‘]/g,"'").trim();
+ return n.includes("bouloute d'halouine")||n.includes('harnachement')||/^dofus\s*15\s*ans\s*[-–—:]?\s*marqueur\s*moniteur(?:\s*\d+)?(?:\b|$)/i.test(n)||/^quete\s+\d+\s+objet\s+\d+(?:\b|$)/i.test(n)||/^dr\s*[-–—:]\s*/i.test(n);
+}
+let hiddenResourceCacheSource=null,hiddenResourceIds=new Set();
+function isHiddenFarmResource(id,name){
+ if(isHiddenFarmResourceName(name))return true;
+ if(hiddenResourceCacheSource!==DB.resources){
+  hiddenResourceCacheSource=DB.resources;
+  hiddenResourceIds=new Set(DB.resources.filter(r=>isHiddenFarmResourceName(r.name)).map(r=>String(r.id)));
+ }
+ return hiddenResourceIds.has(String(id));
+}
+function visibleMonsterDrops(m){const groups=new Map();for(const d of m.drops){if(isHiddenFarmResource(d.id,d.name))continue;const a=groups.get(d.id)||[];a.push(d);groups.set(d.id,a)}return [...groups.values()].filter(ds=>ds.some(d=>d.rate!=null&&visibleDropRate(d.rate))||ds.every(d=>d.rate==null)).map(ds=>ds.find(d=>d.rate!=null&&visibleDropRate(d.rate))||ds[0])}function getResources(mobs){let map=new Map(DB.resources.map(r=>[r.id,r])),out=new Map;for(const m of mobs){for(const d of m.drops){let r=map.get(d.id);if(!r||isHiddenFarmResource(r.id,r.name))continue;if(!out.has(r.id))out.set(r.id,{...r,from:[],rates:[]});let entry=out.get(r.id);entry.from.push(m.name);if(d.rate!=null&&Number.isFinite(Number(d.rate)))entry.rates.push(Number(d.rate));else entry.hasUnknownRate=true}}return [...out.values()].filter(r=>r.rates.some(rate=>visibleDropRate(rate))||(!r.rates.length&&r.hasUnknownRate))}
+// V14 — Index des zones peuplées. Le filtre est purement visuel : aucune donnée supprimée.
+let occupiedZoneIds=new Set();
+function updateOccupiedZones(){
+ const byId=new Map(DB.zones.map(z=>[z.id,z]));
+ const occupied=new Set();
+ for(const z of DB.zones){if(z.mobIds?.length)occupied.add(z.id)}
+ for(const m of DB.monsters){for(const zid of m.zoneIds){if(byId.has(zid))occupied.add(zid)}}
+ // Une région reste visible si une de ses sous-zones (même imbriquée) possède des monstres.
+ for(const zid of [...occupied]){
+  let cur=byId.get(zid),seen=new Set();
+  while(cur?.parent&&!seen.has(cur.parent)){
+   seen.add(cur.parent);occupied.add(cur.parent);cur=byId.get(cur.parent);
+  }
+ }
+ occupiedZoneIds=occupied;
+}
+function visibleChildren(z){return associatedZones(z).filter(child=>!zoneIsHidden(child)&&occupiedZoneIds.has(child.id))}
+function zoneIsHidden(z){const name=String(z?.name||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('fr').trim();return /^d\d+$/.test(z.id)||/^(?:🏰\s*)?(?:expedition|expeditions)(?:\b|\s*[-–:])/i.test(name)||['arenes de goultard','convention','reve du monde des douze'].includes(name)}
+function locationForMonster(m){
+ const zones=DB.zones.filter(z=>!zoneIsHidden(z)&&(m.zoneIds.includes(z.id)||z.mobIds.includes(m.id)));
+ const locations=[];const seen=new Set();
+ for(const z of zones){const parent=DB.zones.find(p=>p.id===z.parent);const target=(parent&&!zoneIsHidden(parent))?parent:z;
+   const sid=target===z?'all':z.id;const key=target.id+'|'+sid;
+   if(!seen.has(key)){seen.add(key);locations.push({root:target,subId:sid,label:(target===z?z.name:target.name+' → '+z.name)})}
+ }
+ return locations.sort((a,b)=>a.label.localeCompare(b.label,'fr'));
+}
+function render(){
+
+ const q=$('zoneSearch').value.toLocaleLowerCase('fr').trim();
+ $('modeZones').classList.toggle('active',searchMode==='zones');$('modeMonsters').classList.toggle('active',searchMode==='monsters');
+ $('zoneSearch').placeholder=searchMode==='monsters'?'Ex : Bouftou, Abraknyde, Kanigrou...':'Ex : Frigost, Pandala, Astrub...';
+ $('zoneSearch').previousElementSibling.textContent=searchMode==='monsters'?'Rechercher un monstre dans toutes les zones':'Rechercher une zone ou sous-zone';
+ if(searchMode==='monsters'){
+  let matches=q?DB.monsters.filter(m=>m.name.toLocaleLowerCase('fr').includes(q)).map(m=>({mob:m,loc:locationForMonster(m)})).filter(x=>x.loc.length):[];
+  const total=matches.length; matches=matches.sort((a,b)=>a.mob.name.localeCompare(b.mob.name,'fr',{sensitivity:'base'})).slice(0,60);
+  $('regions').innerHTML=!q?'<div class="empty" style="padding:20px">Saisis le nom d’un monstre pour retrouver toutes ses zones.</div>':(!matches.length?'<div class="empty" style="padding:20px">Aucun monstre correspondant.</div>':`<div class="monster-match">${fmt(total)} monstre(s) correspondant(s)${total>60?' · 60 premiers affichés':''}</div>`+matches.map(({mob:m,loc})=>{
+   return `<div class="monster-match"><b>${safe(m.name)}</b> <span class="muted">${loc.length} emplacement(s)</span>${loc.length?loc.map(l=>`<button class="monster-locator" data-mob-zone="${safe(l.root.id)}" data-mob-sub="${safe(l.subId)}"><strong>${safe(l.label)}</strong><small>Ouvrir cette zone ↗</small></button>`).join(''):'<div class="muted">Zone non renseignée dans la base.</div>'}</div>`
+  }).join(''));
+  document.querySelectorAll('[data-mob-zone]').forEach(b=>b.onclick=()=>{selected=b.dataset.mobZone;sub=b.dataset.mobSub;tab='monsters';filter='';renderDetail();document.getElementById('details').scrollIntoView({behavior:'smooth',block:'start'})});
+ }else{
+  let top=DB.zones.filter(z=>!z.parent||!DB.zones.some(v=>v.id===z.parent));if(!top.length)top=DB.zones;
+  const matches=top.filter(z=>!zoneIsHidden(z)&&occupiedZoneIds.has(z.id)).filter(z=>z.name.toLocaleLowerCase('fr').includes(q)||visibleChildren(z).some(s=>s.name.toLocaleLowerCase('fr').includes(q))).sort((a,b)=>a.name.localeCompare(b.name,'fr',{sensitivity:'base'}));
+  $('regions').innerHTML=matches.length?matches.map(z=>`<button class="region ${selected===z.id?'active':''}" data-zone="${safe(z.id)}"><span>${safe(z.name)}</span><small>${visibleChildren(z).length} sous-z.</small></button>`).join(''):'<div class="empty" style="padding:20px">Aucune zone correspondante.</div>';
+  document.querySelectorAll('[data-zone]').forEach(b=>b.onclick=()=>{selected=b.dataset.zone;sub='all';filter='';render()});
+ }
+ renderDetail();
+}
+$('modeZones').onclick=()=>{searchMode='zones';$('zoneSearch').value='';render()};
+$('modeMonsters').onclick=()=>{searchMode='monsters';$('zoneSearch').value='';render()};
+function renderDetail(){const z=DB.zones.find(z=>z.id===selected);if(!z||!occupiedZoneIds.has(z.id)){ $('details').innerHTML='<div class="empty"><b>Aucune zone peuplée sélectionnée</b>Les zones sans monstre associé sont masquées de l’explorateur.</div>';return; }const children=visibleChildren(z).sort((a,b)=>a.name.localeCompare(b.name,'fr',{sensitivity:'base'})),mobs=getMobSet(z),resources=getResources(mobs);let html=`<div class="zonehead"><div><div class="muted">EXPLORATION / DOFUS UNITY</div><h3>${safe(z.name)}</h3><span class="muted">${fmt(mobs.length)} monstres associés • ${fmt(resources.length)} ressources répertoriées</span></div><button class="mini" id="shareZone">Copier le récap</button></div><div class="subzones"><button class="chip ${sub==='all'?'selected':''}" data-sub="all">Toute la zone</button>${children.map(s=>`<button class="chip ${sub===s.id?'selected':''}" data-sub="${safe(s.id)}">${s.isDungeon?'<span class="dungeon-icon" aria-label="Donjon" title="Donjon">🏰</span> ':''}${safe(s.name)}</button>`).join('')}</div><div class="tabs"><button class="tab ${tab==='resources'?'active':''}" data-tab="resources">💎 Ressources (${resources.length})</button><button class="tab ${tab==='monsters'?'active':''}" data-tab="monsters">👹 Monstres (${mobs.length})</button></div><div class="toolbar"><input class="inp" id="tableFilter" placeholder="Filtrer ${tab==='resources'?'les ressources':'les monstres'}..." value="${safe(filter)}"><select class="inp" id="sortSelect"><option value="name">Tri : alphabétique</option><option value="sales">Tri : ventes / 30j</option><option value="price">Tri : prix HDV</option><option value="value">Tri : indicateur de valeur</option></select><button class="mini" id="exportCSV">↓ CSV</button></div>`;let records=tab==='resources'?resources:mobs;records=records.filter(r=>(r.name+' '+(r.from||[]).join(' ')).toLocaleLowerCase('fr').includes(filter.toLocaleLowerCase('fr')));records.sort((a,b)=>sort==='name'?a.name.localeCompare(b.name,'fr'):(metric(b,sort)-metric(a,sort)));if(tab==='resources'){html+=`<div class="tablewrap"><table class="resource-table"><thead><tr><th>RESSOURCE</th><th>MONSTRES</th><th title="Taux de drop relevé pour le ou les monstres : survole une valeur pour les détails">TAUX (DROP)</th><th class="num" title="Quantité récupérée pendant ton farm">STOCK</th><th class="num">PRIX HDV (K)</th><th class="num">VENTES / 30 J</th><th class="num" title="Valeur brute estimée du butin : stock farmé × prix HDV unitaire.">VALEUR DU FARM</th></tr></thead><tbody>${records.map(r=>{const p=prices[r.id]||{};return `<tr><td><div class="item">${r.image?`<img loading="lazy" src="${safe(r.image)}" onerror="this.style.display='none'">`:''}<div><b>${safe(r.name)}</b><div class="muted">${r.level?'Niv. '+safe(r.level):''}</div></div></div></td><td title="${safe(r.from.join(', '))}">${safe(r.from.slice(0,5).join(', '))}${r.from.length>5?' +'+(r.from.length-5):''}</td><td title="${safe(r.rates.length?r.rates.map((x,i)=>(r.from[i]||'Monstre')+' : '+formatDropRate(x)).join(' • '):'Taux indisponible dans les données')}">${r.rates.length?safe([...new Set(r.rates.map(x=>formatDropRate(x)))].length===1?formatDropRate(r.rates[0]):([...new Set(r.rates.map(x=>formatDropRate(x)))].length===2?[...new Set(r.rates.map(x=>formatDropRate(x)))].join(' – '):'Variable')):'<span class="muted">—</span>'}</td><td class="num"><input type="number" min="0" step="1" data-stock="${safe(r.id)}" value="${p.stock??''}" placeholder="0"></td><td class="num"><input type="number" min="0" data-price="${safe(r.id)}" value="${p.price??''}" placeholder="0"></td><td class="num"><input type="number" min="0" data-sales="${safe(r.id)}" value="${p.sales??''}" placeholder="0"></td><td class="num" data-indicator="${safe(r.id)}">${farmValueLabel(p)}</td></tr>`}).join('')}</tbody></table></div><div class="note">Le <strong>stock</strong> est la quantité réellement récupérée après ton farm. La <strong>valeur du farm</strong> = stock × prix HDV unitaire (valeur brute théorique, hors taxe et sans garantie de vente). Les ventes / 30 j servent à estimer si le stock peut s'écouler : compare le volume que tu as farmé à la demande mensuelle. Les drops à 0 % restent masqués.</div>`}else{html+=`<div class="tablewrap"><table class="monster-table"><thead><tr><th>MONSTRE</th><th>NIVEAU</th><th>DROPS ASSOCIÉS</th><th>NB RESSOURCES</th></tr></thead><tbody>${records.map(m=>{let shownDrops=visibleMonsterDrops(m);let rs=shownDrops.map(d=>DB.resources.find(r=>r.id===d.id)?.name||d.name).filter(Boolean);return `<tr><td><div class="item">${m.image?`<img loading="lazy" src="${safe(m.image)}" onerror="this.style.display='none'">`:''}<b>${safe(m.name)}</b></div></td><td>${safe(m.level||'—')}</td><td class="muted">${safe(rs.slice(0,8).join(' • '))}${rs.length>8?'…':''}</td><td class="monster-count">${shownDrops.length}</td></tr>`}).join('')}</tbody></table></div><div class="note">Les drops affichés à 0 % sont masqués, également dans ce tableau. Un monstre sans drops affichés ne signifie pas « aucun drop en jeu ».</div>`}if(!records.length)html+='<div class="empty"><b>Aucune donnée correspondante</b>La base peut être incomplète ou les associations zone → monstre → drop peuvent ne pas être fournies.</div>';$('details').innerHTML=html;document.querySelectorAll('[data-sub]').forEach(b=>b.onclick=()=>{sub=b.dataset.sub;filter='';renderDetail()});document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{tab=b.dataset.tab;filter='';renderDetail()});$('tableFilter').oninput=e=>{filter=e.target.value;renderDetail();$('tableFilter').focus();$('tableFilter').setSelectionRange(filter.length,filter.length)};$('sortSelect').value=sort;$('sortSelect').onchange=e=>{sort=e.target.value;renderDetail()};document.querySelectorAll('[data-price],[data-sales],[data-stock]').forEach(el=>el.oninput=e=>{const key=e.target.dataset.price??e.target.dataset.sales??e.target.dataset.stock;const prop=e.target.dataset.price!==undefined?'price':e.target.dataset.sales!==undefined?'sales':'stock';prices[key]??={};prices[key][prop]=e.target.value===''?null:Math.max(0,Number(e.target.value));try{localStorage.setItem('ten-atlas-prices',JSON.stringify(prices))}catch(err){console.warn('Sauvegarde locale indisponible',err)}let v=prices[key];const cell=document.querySelector(`[data-indicator="${CSS.escape(key)}"]`);if(cell)cell.textContent=farmValueLabel(v)});$('shareZone').onclick=()=>navigator.clipboard?.writeText(z.name+' : '+mobs.length+' monstres / '+resources.length+' ressources');$('exportCSV').onclick=()=>{const data=tab==='resources'?resources.map(r=>({Ressource:r.name,Monstres:r.from.join(' | '),Prix:prices[r.id]?.price??'',Ventes30j:prices[r.id]?.sales??'',StockFarme:prices[r.id]?.stock??'',ValeurFarmKamas:farmValueNumeric(prices[r.id])??''})):mobs.map(m=>({Monstre:m.name,Niveau:m.level,Drops:visibleMonsterDrops(m).map(d=>DB.resources.find(r=>r.id===d.id)?.name||d.name).join(' | ')}));csv(data,'atlas-'+z.name+'.csv')}}function farmValueNumeric(p){if(!p||p.stock==null||p.price==null)return null;return Number(p.stock)*Number(p.price)}function farmValueLabel(p){const n=farmValueNumeric(p);return n===null?'—':fmt(n)+' K'}function metric(r,s){const p=prices[r.id]||{};return s==='sales'?Number(p.sales||0):s==='price'?Number(p.price||0):s==='value'?Number(p.price||0)*Number(p.sales||0):0}
+function download(data,name,type){let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([data],{type}));a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),2000)}function csv(records,name){if(!records.length)return;const keys=Object.keys(records[0]);download([keys,...records.map(r=>keys.map(k=>String(r[k]??'').replace(/"/g,'""')))].map(row=>row.map(v=>'"'+v+'"').join(';')).join('\r\n'),name,'text/csv;charset=utf-8')};$('exportPrices').onclick=()=>download(JSON.stringify(prices,null,2),'tenmalexis-prix-ventes-atlas.json','application/json');$('exportBase').onclick=()=>download(JSON.stringify(DB),'tenmalexis-base-atlas.json','application/json');$('loadSaved').onclick=()=>{try{const data=localStorage.getItem('ten-atlas-db');if(!data)throw Error('Aucune base enregistrée');setDb(JSON.parse(data))}catch(e){status(e.message,'error')}};$('headerExportData').onclick=()=>$('exportPrices').click();
+// V13 : le menu Base a été retiré du header ; aucune liaison vers un élément supprimé.
+$('pricesImport').onchange=async e=>{const file=e.target.files?.[0];if(!file)return;try{const obj=JSON.parse(await file.text());const incoming=(obj&&typeof obj==='object'&&!Array.isArray(obj))?(obj.prices&&typeof obj.prices==='object'?obj.prices:obj):null;if(!incoming)throw Error('Format de fichier non reconnu');const next={};for(const [key,value] of Object.entries(incoming)){if(value&&typeof value==='object'&&!Array.isArray(value)){const price=value.price==null||value.price===''?null:Number(value.price),sales=value.sales==null||value.sales===''?null:Number(value.sales),stock=value.stock==null||value.stock===''?null:Number(value.stock);if((price===null||Number.isFinite(price)&&price>=0)&&(sales===null||Number.isFinite(sales)&&sales>=0)&&(stock===null||Number.isFinite(stock)&&stock>=0))next[key]={price,sales,stock}}}if(!Object.keys(next).length)throw Error('Aucun prix ou volume de ventes valide trouvé');prices={...prices,...next};localStorage.setItem('ten-atlas-prices',JSON.stringify(prices));renderDetail();}catch(err){alert('Import impossible : '+err.message)}finally{e.target.value=''}};
+$('zoneSearch').oninput=render;
+async function handleJSON(payload){if(payload?.zones||payload?.areas||payload?.subzones||payload?.subareas){setDb(payload);return}if(payload?.data&&(payload.data.zones||payload.data.areas)){setDb(payload.data);return}throw Error('JSON non reconnu : attendu zones, subzones, monsters, resources.')}
+async function handleZip(zip){const names=Object.keys(zip.files).filter(x=>/\.json$/i.test(x)&&!zip.files[x].dir);let bucket={zones:[],subzones:[],monsters:[],resources:[]};const pick=x=>{let n=x.toLowerCase().split('/').pop().replace(/\.json$/,'');if(/^(areas|zones|area)$/.test(n))return'zones';if(/^(subareas|subzones|subarea)$/.test(n))return'subzones';if(/^(monsters|mobs|monster)$/.test(n))return'monsters';if(/^(items|resources|item)$/.test(n))return'resources';return null};let found=names.filter(x=>pick(x));if(!found.length)throw Error('Archive non reconnue : aucun fichier Areas/SubAreas/Monsters/Items.json trouvé.');for(const name of found){status('Lecture des fichiers : '+name+'…');let value=JSON.parse(await zip.files[name].async('string'));let values=Array.isArray(value)?value:Array.isArray(value.data)?value.data:Object.values(value).filter(v=>v&&typeof v==='object');bucket[pick(name)].push(...values)}setDb(bucket)}
+$('fileImport').onchange=async e=>{let file=e.target.files?.[0];if(!file)return;try{status('Import : '+file.name+'…');if(/\.zip$/i.test(file.name)){if(typeof JSZip==='undefined')throw Error('JSZip indisponible : connexion requise');await handleZip(await JSZip.loadAsync(file))}else if(/\.csv$/i.test(file.name))throw Error('CSV simple non pris en charge pour les relations : utilise un JSON complet ou ZIP de tables.');else await handleJSON(JSON.parse(await file.text()))}catch(ex){status('Import impossible : '+ex.message,'error')}finally{e.target.value=''}};
+// DofusDB: Feathers-compatible listings, paginated, never silently swallow partial results.
+const DDB='https://api.dofusdb.fr';
+async function ddbPage(collection,skip,limit=100){
+ const u=new URL(DDB+'/'+collection);
+ u.searchParams.set('$limit',String(limit));u.searchParams.set('$skip',String(skip));
+ const ctl=new AbortController(), timer=setTimeout(()=>ctl.abort(),25000);
+ try {const r=await fetch(u,{signal:ctl.signal,headers:{Accept:'application/json'}});
+  if(!r.ok)throw Error(collection+' : HTTP '+r.status);
+  const j=await r.json();if(Array.isArray(j))return {data:j,total:null};
+  if(!Array.isArray(j.data))throw Error(collection+' : réponse API inattendue');
+  return {data:j.data,total:Number.isFinite(+j.total)?+j.total:null};
+ } finally {clearTimeout(timer)}
+}
+async function ddbAll(collection){
+ const all=[], seen=new Set();let skip=0,total=null;
+ // The API can enforce a 50-record cap even when $limit=100 is requested.
+ // Offset by the ACTUAL number returned, not by the requested page size.
+ for(let step=0;step<2000;step++){
+   const result=await ddbPage(collection,skip,100);
+   if(total===null)total=result.total;
+   if(!result.data.length)break;
+   let fresh=0;
+   for(const row of result.data){
+     const key=String(row.id??row._id??JSON.stringify(row).slice(0,160));
+     if(!seen.has(key)){seen.add(key);all.push(row);fresh++}
+   }
+   if(!fresh)throw Error(collection+' : pagination bloquée au décalage '+skip+' (doublons détectés)');
+   skip+=result.data.length;
+   status('DOFUSDB • '+collection+' : '+fmt(all.length)+(total!==null?' / '+fmt(total):'')+' entrées…');
+   if(total!==null&&skip>=total)break;
+   if(step===1999)throw Error(collection+' : limite de pagination atteinte');
+   if(step%10===0)await new Promise(resolve=>setTimeout(resolve,0));
+ }
+ return all;
+}
+function idsOf(v){
+ if(v && !Array.isArray(v) && typeof v==='object')v=Object.values(v);
+ return arr(v).map(x=>String(typeof x==='object'?(x.id??x.monsterId??x.monster_id??x.itemId??x.subAreaId??x.subareaId??''):x)).filter(x=>/^\d+$/.test(x))
+}
+function parseDrop(m){
+ const source=[...arr(m.drops),...arr(m.dropData),...arr(m.dropItems),...arr(m.monsterDrops)];
+ return source.map(x=>{
+  if(typeof x!=='object')return {id:String(x),rate:null};
+  const item=x.item??x.object??{};
+  const id=x.objectId??x.itemId??x.item_id??x.dropId??item.id??x.id;
+  const rate=x.percentDropForGrade1??x.dropRate??x.rate??x.probability??x.percentDropForGrade?.[0]??null;
+  return {id:String(id??''),rate,name:txt(item.name??x.name),image:x.image??item.image??''};
+ }).filter(x=>/^\d+$/.test(x.id));
+}
+function makeDofusDB(raw){
+ const areas=raw.areas||[],subs=raw.subareas||[],mon=raw.monsters||[],items=raw.items||[],dungeons=raw.dungeons||[];
+ const zones=areas.map(a=>({id:'a'+a.id,name:txt(a.name)||'Zone '+a.id,parent:'',mobIds:[],subzones:[]}));
+ // Associer les donjons aux sous-zones réelles, sans dupliquer les entrées dans le navigateur.
+ const normName=v=>txt(v).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('fr').replace(/[^a-z0-9]+/g,' ').trim();
+ const dungeonSubIds=new Set();
+ for(const d of dungeons){for(const sid of idsOf(d.subAreaIds??d.subareaIds??d.subareas??d.subAreas??(d.subAreaId!=null?[d.subAreaId]:d.subareaId!=null?[d.subareaId]:d.subArea?.id!=null?[d.subArea.id]:d.subarea?.id!=null?[d.subarea.id]:[])))dungeonSubIds.add(sid)}
+ const dungeonNames=dungeons.map(d=>normName(d.name)).filter(n=>n.length>=5);
+ for(const s of subs){
+  const name=txt(s.name)||'Sous-zone '+s.id,normalized=normName(name);
+  const explicit=dungeonSubIds.has(String(s.id))||Boolean(s.isDungeon??s.dungeon);
+  const matchingDungeon=dungeonNames.some(n=>normalized===n||normalized.endsWith(' '+n)||normalized.startsWith(n+' '));
+  const labelled=/^donjon(?:s)?\b/i.test(normalized);
+  zones.push({id:'s'+s.id,name,parent:'a'+(s.areaId??s.area?.id??''),mobIds:idsOf(s.monsters??s.monsterIds??s.monster_ids??s.monstersIds),subzones:[],isDungeon:explicit||matchingDungeon||labelled});
+ }
+ const subsById=new Map(subs.map(s=>[String(s.id),s]));
+ const mobToZones=new Map();
+ for(const s of subs)for(const mid of idsOf(s.monsters??s.monsterIds??s.monster_ids??s.monstersIds)){
+  if(!mobToZones.has(mid))mobToZones.set(mid,new Set());mobToZones.get(mid).add('s'+s.id);
+ }
+ const monsters=mon.map(m=>{
+  const mid=String(m.id);
+  const zoneIds=new Set([...(mobToZones.get(mid)||[]),...idsOf(m.subareas??m.subAreas??m.subareaIds??m.subAreaIds??m.subarea_ids??m.subAreasIds??(m.subAreaId?[m.subAreaId]:[])).map(x=>'s'+x)]);
+  // Identifiant du sprite (gfxId) != identifiant de la fiche monstre.
+  const graphic=m.gfxId??m.look?.gfxId??m.graphicsId??m.graphics?.id??m.entityLook?.gfxId;
+  const explicitImage=typeof m.image==='string'&&/^https?:\/\//.test(m.image)?m.image:'';
+  return {id:mid,name:txt(m.name)||'Monstre '+mid,level:m.grades?.[0]?.level??m.level??'',image:explicitImage||(graphic!=null?DDB+'/img/monsters/'+graphic+'.png':''),zoneIds:[...zoneIds],drops:parseDrop(m)};
+ });
+ const mobById=new Map(monsters.map(m=>[m.id,m]));
+ const resources=items.filter(i=>i.id!=null&&i.name).map(i=>({id:String(i.id),name:txt(i.name)||'Objet '+i.id,level:i.level??'',image:(i.iconId!=null?DDB+'/img/items/'+i.iconId+'.png':''),type:'',dropMobs:[]}));
+ const resourceById=new Map(resources.map(r=>[r.id,r]));
+ // Certaines versions publient le lien de drop sur l'objet, et non sur le monstre.
+ for(const i of items){
+  const rid=String(i.id);if(!resourceById.has(rid))continue;
+  const refs=[...arr(i.dropMonsterIds),...arr(i.dropMonsters),...arr(i.monsterIds),...arr(i.monsters)];
+  for(const ref of refs){const mid=String(typeof ref==='object'?(ref.monsterId??ref.id??''):ref);
+   const m=mobById.get(mid);if(!m)continue;
+   if(!m.drops.some(d=>d.id===rid))m.drops.push({id:rid,rate:null});
+  }
+ }
+ // Les drops référencés par les monstres doivent exister dans le dictionnaire des ressources.
+ // Sinon, préserver au moins leur ID; ne jamais inventer de nom ni de taux.
+ for(const m of monsters){
+  m.drops=[...new Map(m.drops.map(d=>[d.id,d])).values()];
+  for(const d of m.drops){if(!resourceById.has(d.id)){
+    const r={id:d.id,name:d.name||'Objet #'+d.id,level:'',image:d.image||'',type:'',dropMobs:[]};
+    resources.push(r);resourceById.set(d.id,r);
+  }}
+ }
+ for(const d of dungeons){const dz='d'+d.id;const dname=txt(d.name)||'Donjon '+d.id;
+  const dungeon={id:dz,name:'🏰 '+dname,parent:'',mobIds:idsOf(d.monsters??d.monsterIds??d.bosses),subzones:[]};
+  const subId=d.subAreaId??d.subareaId??d.subArea?.id??d.subarea?.id;
+  if(subId!=null){const found=subsById.get(String(subId));if(found)dungeon.mobIds.push(...idsOf(found.monsters??found.monsterIds));}
+  zones.push(dungeon);
+ }
+ return {zones,monsters,resources};
+}
+// Chargement progressif : zones affichées immédiatement, même si un endpoint ultérieur échoue.
+let loadingAtlas=false;
+async function loadDofusDB(){
+ if(loadingAtlas)return;
+ loadingAtlas=true;
+ const btn=$('loadDofusDB');btn.disabled=true;
+ let raw={areas:[],subareas:[],monsters:[],items:[],dungeons:[]};
+ let stage='zones';
+ try{
+  status('Connexion à DofusDB • récupération des régions…');
+  raw.areas=await ddbAll('areas');
+  raw.subareas=await ddbAll('subareas');
+  if(!raw.areas.length&&!raw.subareas.length)throw Error('L’API ne retourne aucune zone');
+  setDb(makeDofusDB(raw));
+  status('Zones disponibles ('+fmt(DB.zones.length)+'). Chargement des monstres…','ok');
+  stage='monstres';
+  raw.monsters=await ddbAll('monsters');
+  setDb(makeDofusDB(raw));
+  status(fmt(DB.zones.length)+' zones et '+fmt(DB.monsters.length)+' monstres. Chargement des ressources…','ok');
+  stage='ressources';
+  raw.items=await ddbAll('items');
+  setDb(makeDofusDB(raw));
+  stage='donjons';
+  try {raw.dungeons=await ddbAll('dungeons');setDb(makeDofusDB(raw));}
+  catch(err){console.warn('Donjons non récupérés',err)}
+  const linked=DB.monsters.filter(m=>m.zoneIds.length).length;
+  const drops=DB.monsters.filter(m=>m.drops.length).length;
+  status('Chargement terminé : '+fmt(DB.zones.length)+' zones/sous-zones/donjons, '+fmt(DB.monsters.length)+' monstres ('+fmt(linked)+' localisés, '+fmt(drops)+' avec drops), '+fmt(DB.resources.length)+' objets. Vérifie les zones et drops avant utilisation économique.','ok');
+ }catch(e){
+  const partial=DB.zones.length?'Les zones déjà chargées restent consultables. ':'Aucune donnée n’a été chargée. ';
+  status('Échec de récupération ('+stage+') : '+e.message+'. '+partial+'Clique sur Actualiser pour réessayer.','error');
+  console.error('Atlas DOFUSDB',e);
+ }finally{btn.disabled=false;loadingAtlas=false}
+}
+$('loadDofusDB').onclick=loadDofusDB;$('headerRefresh').onclick=loadDofusDB;
+// Afficher instantanément une ancienne base éventuelle, puis la rafraîchir depuis l'API.
+try {const cached=localStorage.getItem('ten-atlas-db');if(cached)setDb(JSON.parse(cached));}
+catch(e){console.warn('Cache Atlas non disponible',e)}
+loadDofusDB();
+
+</script></body></html>
